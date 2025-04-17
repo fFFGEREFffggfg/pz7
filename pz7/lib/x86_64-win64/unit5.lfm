@@ -1,0 +1,47 @@
+object Form1: TForm1
+  Left = 596
+  Height = 240
+  Top = 253
+  Width = 320
+  Caption = 'Form1'
+  ClientHeight = 240
+  ClientWidth = 320
+  OnCreate = FormCreate
+  LCLVersion = '3.8.0.0'
+  object Otyezd: TButton
+    Left = 80
+    Height = 25
+    Top = 40
+    Width = 75
+    Caption = 'Otyezd'
+    TabOrder = 0
+    OnClick = OtyezdClick
+  end
+  object LastGosti: TButton
+    Left = 80
+    Height = 25
+    Top = 80
+    Width = 75
+    Caption = 'LastGosti'
+    TabOrder = 1
+    OnClick = LastGostiClick
+  end
+  object ListNumbers: TButton
+    Left = 80
+    Height = 25
+    Top = 120
+    Width = 75
+    Caption = 'ListNumbers'
+    TabOrder = 2
+    OnClick = ListNumbersClick
+  end
+  object ListGostei: TButton
+    Left = 80
+    Height = 25
+    Top = 160
+    Width = 75
+    Caption = 'ListGostei'
+    TabOrder = 3
+    OnClick = ListGosteiClick
+  end
+end

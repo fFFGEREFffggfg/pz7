@@ -1,0 +1,50 @@
+object ListNomerov: TListNomerov
+  Left = 1302
+  Height = 420
+  Top = 145
+  Width = 541
+  Caption = 'ListNomerov'
+  ClientHeight = 420
+  ClientWidth = 541
+  OnCreate = FormCreate
+  LCLVersion = '3.8.0.0'
+  object DBGrid1: TDBGrid
+    Left = 64
+    Height = 344
+    Top = 48
+    Width = 384
+    Color = clWindow
+    Columns = <>
+    DataSource = DataSource1
+    TabOrder = 0
+  end
+  object ZConnection1: TZConnection
+    ControlsCodePage = cCP_UTF8
+    AutoEncodeStrings = True
+    Properties.Strings = (
+      'AutoEncodeStrings=True'
+      'controls_cp=CP_UTF8'
+    )
+    Connected = True
+    HostName = 'localhost'
+    Port = 0
+    Database = 'korotovskiy'
+    User = 'root'
+    Password = 'root'
+    Protocol = 'MariaDB-10'
+    Left = 480
+    Top = 80
+  end
+  object ZTable1: TZTable
+    Connection = ZConnection1
+    Active = True
+    TableName = 'list_nomerov'
+    Left = 488
+    Top = 136
+  end
+  object DataSource1: TDataSource
+    DataSet = ZTable1
+    Left = 496
+    Top = 200
+  end
+end
